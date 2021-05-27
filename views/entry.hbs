@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title> {{entry.title}} - Elon's blog!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar sticky-top">
+          <h1 class="fw-bold">
+            <a class="text-decoration-none link-dark" href="/blog">Elon's blog!</a>
+          </h1>
+         
+        </nav>
+      </header>
+      <main>
+        <section class="col d-flex justify-content-center">
+          <article class="">
+            <img
+              src={{entry.img}}
+              alt="..."
+              class="img-blog"
+            />
+            <div class="blog-container">
+             
+              <div class="blog-entry">
+                <h2> {{entry.title}} </h2>
+                <p class="">
+                  {{entry.p1}}
+                </p>
+                <p>
+                  {{entry.p2}}
+                </p>
+              </div>
+              
+            </div>
+          </article>
+         
+        </section>
+      </div>
+         {{> footer }}
+      </main>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

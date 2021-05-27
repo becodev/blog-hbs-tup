@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    {{>head }}
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar sticky-top">
+          <h1 class="fw-bold">
+            <a class="text-decoration-none link-dark" href="/blog"> {{title}} </a>
+          </h1>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <p class="home-text fs-3 text-dark text-center align-text-bottom">
+            My name is Elon. I'm the <span class="fw-bold">CEO</span> of many
+            companies but in my free time I enjoy tweeting about crypto. I
+            support $dogecoin. It's
+            <span class="fw-bold">potentially promising!</span>
+          </p>
+        </section>
+        <section class="row justify-content-center">
+          <article class="card">
+            <img
+              src="./assets/teslandbitcoin.jpeg"
+              class="card-img-top"
+              alt="..."
+              style="width: auto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tesla & Bitcoin</h5>
+              <p class="card-text">
+                Tesla has suspended vehicle purchases using Bitcoin. We are concerned about rapidly increasing use of fossil fuiles for Bitcoin mining and transactions, especially coal, which has the worst emissions of any fuel.
+              </p>
+              <a href={{url}} class="btn btn-primary">Read more</a>
+            </div>
+          </article>
+          <article class="card">
+            <img
+              src="./assets/elondoge.jpg"
+              class="card-img-top"
+              alt="..."
+              style="width: auto"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                SpaceX launching satellite Doge-1 to the moon next year
+              </h5>
+              <p class="card-text">
+                SpaceX will launch a satellite to the Moon next year funded entirely with the cryptocurrency Dogecoin
+              </p>
+              <a href={{url2}} class="btn btn-primary">Read more</a>
+            </div>
+          </article>
+        </section>
+      </div>
+      </main>
+        {{> footer }}
+  </body>
+</html>
